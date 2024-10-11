@@ -296,7 +296,8 @@ const RegistrationPage = (props) => {
               'mw-xs mt-3',
               { 'w-100 m-auto pt-4 main-content': registrationEmbedded },
             )}
-          >
+          > 
+            <div>hi there how can we help you</div>
             <ThirdPartyAuthAlert
               currentProvider={currentProvider}
               platformName={platformName}
