@@ -318,6 +318,16 @@ const RegistrationPage = (props) => {
                 helpText={[formatMessage(messages['help.text.name'])]}
                 floatingLabel={formatMessage(messages['registration.fullname.label'])}
               />
+              <NameField
+                name="name"
+                value={formFields.name}
+                shouldFetchUsernameSuggestions={!formFields.username.trim()}
+                handleChange={handleOnChange}
+                handleErrorChange={handleErrorChange}
+                errorMessage={errors.name}
+                helpText={[formatMessage(messages['help.text.name'])]}
+                floatingLabel={formatMessage(messages['registration.fullname.label'])}
+              />
               <EmailField
                 name="email"
                 value={formFields.email}
